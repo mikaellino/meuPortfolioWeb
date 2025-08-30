@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Portfólio de Mikael Henrique Lino Rodrigues — Desenvolvedor em formação. Projetos, habilidades técnicas e formas de contato.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfólio de Mikael Henrique Lino Rodrigues — Desenvolvedor em formação. Projetos, habilidades técnicas e formas de contato.">
   <meta name="theme-color" content="#0f172a">
   <title>Portfólio | Mikael Rodrigues</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -15,7 +17,11 @@
 
   <!-- Navegação -->
   <nav class="navegacao" aria-label="Navegação principal">
-    <ul class="menu">
+    <!-- Botão Hamburguer -->
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+
+    <!-- Links -->
+    <ul class="menu" id="menu">
       <li><a href="#inicio" class="menu-link">Início</a></li>
       <li><a href="#sobre" class="menu-link">Sobre</a></li>
       <li><a href="#habilidades" class="menu-link">Habilidades</a></li>
@@ -27,7 +33,7 @@
 
   <!-- Cabeçalho / Hero -->
   <main id="inicio" class="cabecalho">
-    <img src="./img/foto-perfil.jpg" alt="Foto de perfil de Mikael Rodrigues" class="foto-perfil" loading="eager"/>
+    <img src="./img/foto-perfil.jpg" alt="Foto de perfil de Mikael Rodrigues" class="foto-perfil" loading="eager" />
     <h1>Mikael Rodrigues</h1>
     <p class="cabecalho-sub-titulo">Desenvolvedor • Estudante de ADS</p>
     <a href="#projetos" class="btn-destaque" aria-label="Ir para projetos">Ver Projetos</a>
@@ -38,11 +44,17 @@
     <h2 class="sobre-titulo">Sobre mim</h2>
     <div class="sobre-caixa">
       <p class="sobre-paragrafo">
-        Me chamo Mikael Henrique Lino Rodrigues, tenho 20 anos e sou um desenvolvedor apaixonado por tecnologia e inovação. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (ADS), na Faculdade de Tecnologia de Campinas, e buscando oportunidades para aplicar meus conhecimentos em projetos reais.
-        <br/><br/>
-        Contando um pouquinho sobre a minha trajetória, também sou formado em Técnico em Informática para Internet, pela Etec de Hortolândia. Estudei a língua inglesa durante 5 anos no CNA Idiomas, onde pude aprimorar minhas habilidades de comunicação e compreensão cultural.
-        <br/><br/>
-        Sou uma pessoa dedicada, proativa e sempre em busca de novos desafios. Acredito que a tecnologia tem o poder de transformar vidas e estou comprometido em contribuir para esse impacto positivo através do meu trabalho como desenvolvedor.
+        Me chamo Mikael Henrique Lino Rodrigues, tenho 20 anos e sou um desenvolvedor apaixonado por tecnologia e
+        inovação. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (ADS), na Faculdade de Tecnologia de
+        Campinas, e buscando oportunidades para aplicar meus conhecimentos em projetos reais.
+        <br /><br />
+        Contando um pouquinho sobre a minha trajetória, também sou formado em Técnico em Informática para Internet, pela
+        Etec de Hortolândia. Estudei a língua inglesa durante 5 anos no CNA Idiomas, onde pude aprimorar minhas
+        habilidades de comunicação e compreensão cultural.
+        <br /><br />
+        Sou uma pessoa dedicada, proativa e sempre em busca de novos desafios. Acredito que a tecnologia tem o poder de
+        transformar vidas e estou comprometido em contribuir para esse impacto positivo através do meu trabalho como
+        desenvolvedor.
       </p>
     </div>
   </section>
@@ -81,27 +93,27 @@
     <h2 class="formacoes-titulo">Formações & Cursos</h2>
     <div class="formacoes-caixa">
       <div class="formacao-card" aria-label="Fatec Campinas">
-        <img src="./img/logo-fatec.png" alt="Fatec Campinas" loading="lazy"/>
+        <img src="./img/logo-fatec.png" alt="Fatec Campinas" loading="lazy" />
         <p>Análise e Desenvolvimento de Sistemas</p>
       </div>
       <div class="formacao-card" aria-label="Etec Hortolândia">
-        <img src="./img/logo-etec.png" alt="Etec Hortolândia" loading="lazy"/>
+        <img src="./img/logo-etec.png" alt="Etec Hortolândia" loading="lazy" />
         <p>Técnico em Informática para Internet</p>
       </div>
       <div class="formacao-card" aria-label="CNA Hortolândia">
-        <img src="./img/logo-cna.png" alt="CNA Hortolândia" loading="lazy"/>
+        <img src="./img/logo-cna.png" alt="CNA Hortolândia" loading="lazy" />
         <p>Língua Inglesa</p>
       </div>
       <div class="formacao-card" aria-label="Cotuca">
-        <img src="./img/logo-cotuca.png" alt="Cotuca" loading="lazy"/>
+        <img src="./img/logo-cotuca.png" alt="Cotuca" loading="lazy" />
         <p>Técnico em Polímeros</p>
       </div>
       <div class="formacao-card" aria-label="Senai">
-        <img src="./img/logo-senai.png" alt="SENAI" loading="lazy"/>
+        <img src="./img/logo-senai.png" alt="SENAI" loading="lazy" />
         <p>Fundamentos de Excel</p>
       </div>
       <div class="formacao-card" aria-label="IBM">
-        <img src="./img/logo-ibm.png" alt="IBM" loading="lazy"/>
+        <img src="./img/logo-ibm.png" alt="IBM" loading="lazy" />
         <p>Fundamentos de Inteligência Artificial</p>
       </div>
     </div>
@@ -114,35 +126,41 @@
     <div class="projetos-caixa">
       <!-- Sem link definido: usa div para evitar falso link -->
       <div class="projetos-card" aria-label="Projeto NutriHelp">
-        <img src="/img/NutriHelp logo site.png" alt="Projeto NutriHelp" class="projetos-imagem" loading="lazy"/>
+        <img src="/img/NutriHelp logo site.png" alt="Projeto NutriHelp" class="projetos-imagem" loading="lazy" />
         <div class="caixa-textos-projeto">
           <h3 class="info-projetos">NutriHelp</h3>
           <p class="paragrafo-projetos">
             Plataforma que democratiza o acesso à nutrição conectando usuários e nutricionistas.
           </p>
-          <div class="tags-projeto"><span>JavaScript</span><span>Node.js</span><span>HTML</span><span>CSS</span><span>Firebase</span></div>
+          <div class="tags-projeto">
+            <span>JavaScript</span><span>Node.js</span><span>HTML</span><span>CSS</span><span>Firebase</span></div>
         </div>
       </div>
 
-      <a href="https://github.com/mikaellino/cursosEcommerce.git" class="projetos-card" aria-label="Abrir projeto SkillHub" target="_blank" rel="noopener noreferrer">
-        <img src="/img/logo-skillhub.jpg" alt="Projeto SkillHub" class="projetos-imagem" loading="lazy"/>
+      <a href="https://github.com/mikaellino/cursosEcommerce.git" class="projetos-card"
+        aria-label="Abrir projeto SkillHub" target="_blank" rel="noopener noreferrer">
+        <img src="/img/logo-skillhub.jpg" alt="Projeto SkillHub" class="projetos-imagem" loading="lazy" />
         <div class="caixa-textos-projeto">
           <h3 class="info-projetos">SkillHub</h3>
           <p class="paragrafo-projetos">
             E-commerce de cursos de tecnologia com foco em acessibilidade de preço e relação com professores.
           </p>
-          <div class="tags-projeto"><span>Kotlin</span><span>Jetpack Compose</span><span>PHP</span><span>Laragon</span><span>MySQL</span></div>
+          <div class="tags-projeto"><span>Kotlin</span><span>Jetpack
+              Compose</span><span>PHP</span><span>Laragon</span><span>MySQL</span></div>
         </div>
       </a>
 
-      <a href="https://github.com/mikaellino/gameGalaxy.git" class="projetos-card" aria-label="Abrir projeto Game Galaxy" target="_blank" rel="noopener noreferrer">
-        <img src="/img/GameGalaxy logo site.png" alt="Projeto Game Galaxy" class="projetos-imagem" loading="lazy"/>
+      <a href="https://github.com/mikaellino/gameGalaxy.git" class="projetos-card"
+        aria-label="Abrir projeto Game Galaxy" target="_blank" rel="noopener noreferrer">
+        <img src="/img/GameGalaxy logo site.png" alt="Projeto Game Galaxy" class="projetos-imagem" loading="lazy" />
         <div class="caixa-textos-projeto">
           <h3 class="info-projetos">Game Galaxy</h3>
           <p class="paragrafo-projetos">
             Marketplace para compra e venda de hardwares e periféricos tecnológicos.
           </p>
-          <div class="tags-projeto"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Laragon</span><span>Laravel 11</span></div>
+          <div class="tags-projeto">
+            <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Laragon</span><span>Laravel
+              11</span></div>
         </div>
       </a>
     </div>
@@ -154,11 +172,12 @@
 
     <form class="formulario-contato" id="formulario" novalidate>
       <div class="grupo-form">
-        <input placeholder="Nome" class="campo-form" id="nome" name="nome" autocomplete="name" required/>
+        <input placeholder="Nome" class="campo-form" id="nome" name="nome" autocomplete="name" required />
       </div>
 
       <div class="grupo-form">
-        <textarea class="campo-form" rows="5" placeholder="Digite sua mensagem" id="mensagem" name="mensagem" required></textarea>
+        <textarea class="campo-form" rows="5" placeholder="Digite sua mensagem" id="mensagem" name="mensagem"
+          required></textarea>
       </div>
 
       <div class="botoes-contato">
@@ -172,8 +191,10 @@
   <footer class="rodape">
     <p>&copy; 2025 — Desenvolvido por Mikael Rodrigues</p>
     <div class="social-links">
-      <a href="https://github.com/mikaellino" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Mikael">GitHub</a>
-      <a href="https://www.linkedin.com/in/mikaelhenriquelinorodrigues/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Mikael">LinkedIn</a>
+      <a href="https://github.com/mikaellino" target="_blank" rel="noopener noreferrer"
+        aria-label="GitHub de Mikael">GitHub</a>
+      <a href="https://www.linkedin.com/in/mikaelhenriquelinorodrigues/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn de Mikael">LinkedIn</a>
       <a href="mailto:mikaelhenriquelino@gmail.com" aria-label="Enviar e-mail para Mikael">E-mail</a>
     </div>
   </footer>
@@ -188,8 +209,8 @@
     const emailDestino = 'mikaelhenriquelino@gmail.com';
 
     function getFormData() {
-      const nome = (document.getElementById('nome').value || '').trim();
-      const mensagem = (document.getElementById('mensagem').value || '').trim();
+      const nome = (document.getElementById('nome')?.value || '').trim();
+      const mensagem = (document.getElementById('mensagem')?.value || '').trim();
       return { nome, mensagem };
     }
 
@@ -223,8 +244,8 @@
     }
 
     // Eventos dos botões
-    document.getElementById('btn-whats').addEventListener('click', enviarWhats);
-    document.getElementById('btn-email').addEventListener('click', enviarEmail);
+    document.getElementById('btn-whats')?.addEventListener('click', enviarWhats);
+    document.getElementById('btn-email')?.addEventListener('click', enviarEmail);
 
     // --------- Voltar ao topo + Navbar + Link ativo ---------
     const btnTopo = document.getElementById('btn-topo');
@@ -234,7 +255,7 @@
 
     function highlightActiveLink() {
       let currentId = '';
-      const offset = 120; // compensa a navbar fixa
+      const offset = 120;
       sections.forEach(sec => {
         const top = sec.getBoundingClientRect().top + window.scrollY - offset;
         if (window.scrollY >= top) currentId = sec.id;
@@ -267,8 +288,22 @@
 
     document.querySelectorAll('.section').forEach(sec => observer.observe(sec));
 
+    // --------- Hamburguer Menu ---------
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+
+    // Fecha o menu ao clicar em um link
+    document.querySelectorAll(".menu-link").forEach(link =>
+      link.addEventListener("click", () => menu.classList.remove("show"))
+    );
+
     // Inicializa estado do link ativo ao carregar
     highlightActiveLink();
   </script>
 </body>
+
 </html>
